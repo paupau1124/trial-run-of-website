@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.modal-row {
+    display: flex;
+    gap: 50px;
+}
+
+.modal-column {
+    float: left;
+}
+
+.modal-column.left {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-column.right {
+    width: 60%;
+    padding: 20px;
+}
+
+.staff-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+}
+
+.staff-modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 20px;
+}
+
+/* Close button */
+.staff-modal .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #999;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+    padding-right: 10px;
+}
+
+.staff-modal .close:hover {
+    color: #333;
+}
+
+.staff-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    margin-bottom: 15px;
+    margin: 0 auto 15px auto; 
+}
+
+/* Typography */
+.modal-column h2 {
+    margin: 15px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.modal-column h3 {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+.modal-column p, .modal-column a {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: black;
+    text-decoration: none;
+}
+
+.modal-column strong {
+    color: #333;
+    font-size: 18px;
+}
+
+.modal-column a:hover {
+    text-decoration: underline;
+}
+
+/* Contact links */
+.personal-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .modal-column .left, 
+    .modal-column .right {
+        width: 100%;
+        float: none;
+    }
+    
+    .staff-image {
+        width: 120px;
+        height: 120px;
+    }
+}

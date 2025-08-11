@@ -1,0 +1,409 @@
+.desktop {
+  display: flex;
+  flex-direction: column;
+  height: 1333px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #252732;
+  font-family: "Open Sans-Light", Helvetica;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agency-name {
+  color: white;
+  font-family: 'Your Existing Font Family', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  position: relative;
+}
+
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: block;
+  z-index: 0;
+}
+
+.desktop .nav-bar {
+  display: flex;
+  height: 93px;
+  align-items: center;
+  gap: 250px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #252732;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #414141;
+}
+
+.desktop .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0px 0px 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.desktop .ast-logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Open Sans-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .div {
+  display: flex;
+  width: 482px;
+  height: 50px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 0px 10px 50px;
+  position: relative;
+}
+
+.desktop .frame-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -1.00px;
+  margin-left: -33.00px;
+}
+
+.desktop .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Open Sans-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle {
+  position: relative;
+  width: 1px;
+  height: 1px;
+}
+
+.desktop .frame-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -1.00px;
+}
+
+.desktop .hover-searchbar {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 63px;
+}
+
+.desktop .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 922px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.desktop .overlap-wrapper {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1652px;
+  background-color: #ffffff;
+}
+
+.desktop .overlap {
+  position: relative;
+  width: 1440px;
+  height: 922px;
+  background-image: url(./img/yellow-rectangle.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.desktop .group {
+  position: absolute;
+  width: 1047px;
+  height: 756px;
+  top: 96px;
+  left: 208px;
+}
+
+.desktop .overlap-group {
+  position: relative;
+  width: 1023px;
+  height: 756px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-table-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+
+.contact-table th {
+  background-color: #252732;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  border: 1px solid #414141;
+  font-size: 20px;
+}
+
+.contact-table td {
+  padding: 15px 20px;
+  border: 1px solid #414141 !important;
+  font-weight: normal;
+  text-align: left;
+}
+
+.contact-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.contact-table tr:hover {
+  background-color: #eeeeee;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border: 2px solid #414141;
+  table-layout: auto;
+}
+
+.contact-table {
+  margin: 0 auto;
+}
+
+
+
+.desktop .text-wrapper-15 {
+  position: absolute;
+  width: 343px;
+  top: 7px;
+  left: 56px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .footer {
+  display: flex;
+  flex-direction: column;
+  height: 294px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: transparent;
+}
+
+.desktop .rectangle-2 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 298px;
+  margin-bottom: -4.00px;
+  background-color: #252732;
+}
+
+.desktop .REPUBLIC-OF-THE {
+  position: absolute;
+  width: 251px;
+  top: 34px;
+  left: 310px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .span {
+  font-weight: 700;
+}
+
+.desktop .text-wrapper-16 {
+  font-family: "Open Sans-Regular", Helvetica;
+}
+
+.desktop .ABOUT-GOVPH-learn {
+  position: absolute;
+  width: 336px;
+  top: 30px;
+  left: 669px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .GOVERNMENT-LINKS {
+  position: absolute;
+  width: 251px;
+  top: 30px;
+  left: 1113px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .coat-of-arms-of-the {
+  position: absolute;
+  width: 164px;
+  height: 185px;
+  top: 53px;
+  left: 50px;
+  object-fit: cover;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Open Sans Condensed";
+  text-align: center;
+  position: relative;
+  padding: 30px 0;
+  color: #252732;
+  width: 100%;
+}
+
+.contact-heading::before,
+.contact-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+  background-color: #1c1d25;
+  width: 100vw;
+  display: block;
+  z-index: 1;
+}
+
+.contact-heading::before {
+  top: 10px;
+}
+
+.contact-heading::after {
+  bottom: 10px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-table {
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

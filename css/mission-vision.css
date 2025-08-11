@@ -1,0 +1,101 @@
+/*************  ✨ Windsurf Command 🌟  *************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+/* Reset margins & paddings */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+  position: bottom;
+  bottom: 0;
+}
+
+/* Mission & Vision container */
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 0;
+  /* no extra space */
+}
+
+/* Inner flex container to hold the two columns */
+.mission-vision .overlap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each column */
+.mission-vision .group,
+.mission-vision .overlap-wrapper {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* center horizontally */
+  justify-content: flex-start;
+  /* center vertically */
+  position: relative;
+  min-height: 700px;
+  padding: 8rem 1rem;
+  box-sizing: border-box auto;
+}
+
+/* Background overlays */
+.mission-vision .mission-holder,
+.mission-vision .vision-holder {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  z-index: 1;
+  /* behind text */
+  margin-bottom: 1;
+  height: 100%;
+}
+
+.mission-vision .mission-holder {
+  background-color: #d1ac37;
+}
+
+.mission-vision .vision-holder {
+  background-color: #252732;
+}
+
+/* Headings */
+.mission-vision .text-wrapper,
+.mission-vision .text-wrapper-2 {
+  font-size: 70px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding-top: 0%
+}
+
+/* Responsive footer styling */
+/* Paragraph text */
+.mission-vision .p,
+.mission-vision .text-wrapper-3 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 1rem;
+  z-index: 3;
+  position: relative;
+}

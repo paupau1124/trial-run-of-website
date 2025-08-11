@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-behavior">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Team | GATES Project</title>
+    <link rel="stylesheet" href="../css/ai.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/our-team-modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/asti-logo.png">
+
+    <script src="../js/navbar-loader.js" defer></script>
+    <script src="../js/our-team-modal.js" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+
+        <h1 class="team-name">MANAGEMENT</h1>
+        <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+
+        <div class="card" style="background-image: url('../images/stock-1.jpg');">
+
+
+            <div class="profile-card" onclick="showStaffModal('christopher-belaos')">
+                <img class="profile-pic" src="../images/ai-team_christopher-belaos.PNG" alt="Christopher Belaos">
+                <div class="profile-description">
+                    <p class="name">Christopher Belaos</p>
+                    <p class="position">Project Technical Specialist III - AI Engineer</p>
+                </div>
+            </div>
+
+            <div class="profile-card" onclick="showStaffModal('jasper-castro')">
+                <img class="profile-pic" src="../images/ai-team_jasper-castro.png" alt="Jasper Adrian Dwight V. Castro">
+                <div class="profile-description">
+                    <p class="name">Jasper Adrian Dwight V. Castro</p>
+                    <p class="position">Project Technical Specialist IV - Natural Language Processing Engineer</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card" style="background-image: url('../images/stock-2.jpg');">
+            <div class="profile-card" onclick="showStaffModal('alyssa-ocampo')">
+                <img class="profile-pic" src="../images/ai-team_alyssa_ocampo.png" alt="Alyssa Patricia B. Ocampo">
+                <div class="profile-description">
+                    <p class="name">Alyssa Patricia B. Ocampo</p>
+                    <p class="position">Project Technical Specialist I - Data and Machine Learning Engineer</p>
+                </div>
+            </div>
+
+            <div class="profile-card" onclick="showStaffModal('norbert-ibera')">
+                <img class="profile-pic" src="../images/ai-team_norbert-ibera.jpeg" alt="Norbert John Ibera">
+                <div class="profile-description">
+                    <p class="name">Norbert John Ibera</p>
+                    <p class="position">Project Technical Assistant IV - Jr. Data Engineer</p>
+                </div>
+            </div>
+            <!--
+            <div class="profile-card" onclick="showStaffModal('john')">
+                <img class="profile-pic" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Project Technical Assistant IV; Jr. Data Engineer</p>
+                </div>
+            </div>
+
+            <div class="profile-card" onclick="showStaffModal('john')">
+                <img class="profile-pic" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Project Technical Assistant IV; Jr. Data Engineer</p>
+                </div>
+            </div>
+        </div>
+    -->
+        </div>
+    </main>
+    <div id="staffModal" class="staff-modal">
+        <div class="staff-modal-content">
+            <span class="close" onclick="closeStaffModal()">&times;</span>
+            <div id="staffModalBody">
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

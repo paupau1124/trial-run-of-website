@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lakehouse Team | GATES Project</title>
+
+    <link rel="stylesheet" href="../css/lakehouse.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/our-team-modal.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/asti-logo.png">
+
+    <script src="../js/navbar-loader.js" defer></script>
+    <script src="../js/our-team-modal.js" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+        <h1 class="team-name">LAKEHOUSE TEAM</h1>
+        <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="card" style="background-image: url('../images/stock-1.jpg');">
+            <div class="profile-card" onclick="showStaffModal('jean-jay-quitayen')">
+                <img class="profile-pic modal-trigger" src="../images/lakehouse_jean-jay-quitayen.jpeg"
+                    alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Jean Jay Quitayen</p>
+                    <p class="position">Supervising Project Technical Specialist</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/lakehouse_ruben-capuli.jpg"
+                    alt="Name of Team Member">
+                <div class="profile-description" onclick="showStaffModal('ruben-capuli')">
+                    <p class="name">Ruben L. Capuli III</p>
+                    <p class="position">Project Technical Assistant IV - Jr. Network Engineer</p>
+                </div>
+            </div>
+        </div> <!-- REMOVE -->
+        <!--
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Position</p>
+                    <p class="description">Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="background-image: url('../images/stock-2.jpg');">
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Position</p>
+                    <p class="description">Description</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Position</p>
+                    <p class="description">Description</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Position</p>
+                    <p class="description">Description</p>
+                </div>
+            </div>
+        </div>
+    -->
+    </main>
+    <div id="staffModal" class="staff-modal">
+        <div class="staff-modal-content">
+            <span class="close" onclick="closeStaffModal()">&times;</span>
+            <div id="staffModalBody">
+                <!-- Staff details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

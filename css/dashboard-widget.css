@@ -1,0 +1,67 @@
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.stat-card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 45px;
+    margin-left: 30px;
+    /* Make the card circular */
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    height: 180px;
+    width: 180px;
+    /* Ensure width and height are equal for a circle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease;
+    /* Transition for border color */
+    border: 5px solid transparent;
+}
+
+.stat-card:nth-child(1) {
+    border-color: #c1b7fc;
+}
+
+.stat-card:nth-child(2) {
+    border-color: #f4ecac;
+
+}
+
+.stat-card:nth-child(3) {
+    border-color: #cbd0f7
+        /* Example color */
+}
+
+.stat-card:nth-child(4) {
+    border-color: #f7c8c8
+        /* Example color */
+}
+
+.stat-card h4 {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-card .stat-value {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.stat-card:hover {
+    box-shadow: 0 8px 12px -1px rgba(0, 0, 0, 0.2), 0 4px 8px -1px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+    background-color: #ffffff;
+    /* Change color on hover */
+}

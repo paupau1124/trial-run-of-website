@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Platform Team | GATES Project</title>
+    <link rel="stylesheet" href="../css/platform.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/our-team-modal.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/asti-logo.png">
+
+    <script src="../js/navbar-loader.js" defer></script>
+    <script src="../js/our-team-modal.js" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+        <h1 class="team-name">PLATFORM TEAM</h1>
+        <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.</p>
+        <div class="card" style="background-image: url('../images/stock-1.jpg');">
+            <div class="profile-card" onclick="showStaffModal('christine-cureg')">
+                <img class="profile-pic" src="../images/platform_christine-cureg.jpg" alt="Christine Shamah Cureg">
+                <div class="profile-description">
+                    <p class="name">Christine Shamah Cureg</p>
+                    <p class="position">Project Technical Specialist V</p>
+                </div>
+            </div>
+
+            <div class="profile-card" onclick="showStaffModal('alaine-ramos')">
+                <img class="profile-pic" src="../images/platform_alaine-ramos.png" alt="Alaine Richelle C. Ramos">
+                <div class="profile-description">
+                    <p class="name">Alaine Richelle C. Ramos</p>
+                    <p class="position">Project Technical Specialist III - Senior Backend Developer</p>
+                </div>
+            </div>
+
+            <div class="profile-card" onclick="showStaffModal('mary-jane-alpad')">
+                <img class="profile-pic" src="../images/platform_jane-alpad.jpg" alt="Mary Jane Alpad">
+                <div class="profile-description">
+                    <p class="name">Mary Jane Alpad</p>
+                    <p class="position">Project Technical Specialist II - QA Engineer</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+        <div class="card" style="background-image: url('../images/stock-2.jpg');">
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Position</p>
+                    <p class="description">Description</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Position</p>
+                    <p class="description">Description</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+                <div class="profile-description">
+                    <p class="name">Name</p>
+                    <p class="position">Position</p>
+                    <p class="description">Description</p>
+                </div>
+            </div>
+        
+        </div> -->
+    </main>
+    <div id="staffModal" class="staff-modal">
+        <div class="staff-modal-content">
+            <span class="close" onclick="closeStaffModal()">&times;</span>
+            <div id="staffModalBody">
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

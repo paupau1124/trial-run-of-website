@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About GATES | DOST-ASTI</title>
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/about-gates.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/about-gates.css">
+    <script src="../js/components.js" defer></script>
+    <script src="../js/redirect.js"></script>
+
+    <link rel="icon" type="image/png" href="../images/Storm_Cloud.png">
+    <script src="../js/navbar-loader.js" defer></script>
+    <script src="../js/search.js" defer></script>
+
+
+    <link rel="icon" type="image/png" href="../images/asti-logo.png">
+    <script src="../js/navbar-loader.js" defer defer></script>
+    <script src="../js/search.js" defer></script>
+    <script src="../js/page-indicator.js" defer></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/dashboard-widget.css" />
+    <script src="../js/dashboard-widget.js" defer></script>
+
+</head>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+        <section class="about">
+            <h1>ABOUT GATES</h1>
+            <p>The Geospatial Analytics and technology Solution (GATES Project) is designed to enhance the use of
+                geospatial science in tackling vital challenges, including disaster risk reduction, urban planning,
+                and
+                environmental management. This initiative is intended for government adoption to help reduce
+                disaster
+                risks, address urban planning issues, and improve scientific datasets for managing the environment.
+            </p>
+        </section>
+        <br>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-content">
+                <div class="chart-card">
+                    <h3>GATES Teams</h3>
+                    <div class="chart-container">
+                        <canvas id="teamsChart"></canvas>
+                    </div>
+                    <div class="teams-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #3B82F6;"></span>
+                            <span class="legend-text">AI Team</span>
+                            <span class="legend-percentage">52.1%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #F59E0B;"></span>
+                            <span class="legend-text">Lakehouse Team</span>
+                            <span class="legend-percentage">22.8%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #10B981;"></span>
+                            <span class="legend-text">Platform Team</span>
+                            <span class="legend-percentage">13.9%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #8B5CF6;"></span>
+                            <span class="legend-text">Management</span>
+                            <span class="legend-percentage">11.2%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-card large">
+                    <div class="chart-header">
+                        <h3>GATES Progress</h3>
+                        <div class="chart-tabs">
+                            <span class="tab">Total Projects</span>
+                            <span class="tab">Operating Status</span>
+                            <span class="tab active">This year</span>
+                            <span class="tab">Last year</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="usersChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>TEAM Progress</h3>
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <div class="progress-icon ai-icon">🤖</div>
+                                <span class="progress-name">AI</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill ai-progress" data-progress="74"></div>
+                                </div>
+                                <span class="progress-percentage">74% Correct</span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <div class="progress-icon website-icon">🌐</div>
+                                <span class="progress-name">Website</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill website-progress" data-progress="52"></div>
+                                </div>
+                                <span class="progress-percentage">52% Correct</span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <div class="progress-icon lakehouse-icon">🏠</div>
+                                <span class="progress-name">Lakehouse</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill lakehouse-progress" data-progress="36"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+
+
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <h4>Total Projects</h4>
+                            <p class="stat-value" data-target="18" data-prefix="%">0</p>
+
+                        </div>
+
+                        <div class="stat-card">
+                            <h4>Operating Status</h4>
+                            <p class="stat-value" data-target="100" data-prefix="%">0</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <h4>This Year</h4>
+                            <p class="stat-value" data-target="100" data-prefix="%">0
+                            </p>
+                        </div>
+
+                        <div class="stat-card">
+                            <h4>Last Year</h4>
+                            <p class="stat-value" data-target="50" data-prefix="%">0
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <section class="team">
+                <h2>LEARN MORE ABOUT THE TEAM</h2>
+                <div class="cards">
+                    <a href="ai.html" class="card ai">
+                        <button>AI</button>
+                    </a>
+                    <a href="platform.html" class="card platform">
+                        <button>PLATFORM</button>
+                    </a>
+                    <a href="lakehouse.html" class="card lakehouse">
+                        <button>LAKEHOUSE</button>
+                    </a>
+                    <a href="management.html" class="card management">
+                        <button>MANAGEMENT</button>
+                    </a>
+                    <a href="interns.html" class="card interns">
+                        <button>INTERNS</button>
+                    </a>
+                </div>
+            </section>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+</html>
